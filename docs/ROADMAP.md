@@ -24,7 +24,7 @@
 - [x] P1：合成頁面的明暗、720px 窄版、中英混合、寬表格、長程式碼、圖片及折疊 Callout 初次瀏覽器檢視。
 - [ ] P1：輕透表面的真實 Obsidian 視覺驗收、Style Settings 實際面板驗證與效能量測。
 
-目前未對個人 Vault 執行部署或知識整理。舊 monolith 測試不代表拆分後的 runtime 驗證。
+2026-10-18：已依使用者要求備份並部署 Theme 0.5.0 到既有 Vault；安裝時只更新兩個主題檔案，筆記內容雜湊比對一致。完成 Obsidian 1.14.4 深色 Reading／Live Preview 可見元件的初次 smoke check；未啟用或部署其他插件。其餘完整狀態／三元件共存仍待驗證，見 [測試紀錄](TESTING.md)。舊 monolith 測試不代表拆分後的 runtime 驗證。
 
 詳細成果、驗收方式、程式觀察與可優化項目見 [工作進度](PROGRESS.zh-TW.md)。
 
