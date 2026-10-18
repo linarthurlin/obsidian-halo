@@ -155,3 +155,6 @@ body {
   --status-bar-background: transparent;
   --status-bar-border-width: 0;
 }
+
+/* Public plugin-facing aliases, integration contract v1. */
+body { --pg-surface: var(--personal-panel); --pg-text: var(--personal-text); --pg-muted: var(--personal-muted); --pg-accent: var(--personal-accent); --pg-radius: var(--personal-radius-callout); --pg-selection-background: linear-gradient(var(--pg-selection-angle), var(--pg-selection-start), var(--pg-selection-end)); }

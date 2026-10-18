@@ -25,3 +25,6 @@ body {
 .canvas-node-container { border-radius: var(--personal-radius-callout); }
 .markdown-source-view.mod-cm6 .cm-table-widget { border-radius: var(--personal-radius-menu); }
 .pg-navigator { background: color-mix(in srgb, var(--personal-base) var(--personal-sidebar-alpha), transparent); }
+
+/* Agent owns its DOM and behavior; this adapter only supplies shared visual tokens. */
+.pga-workbench { --pga-surface: var(--pg-surface); --pga-text: var(--pg-text); --pga-muted: var(--pg-muted); --pga-accent: var(--pg-accent); --pga-radius: var(--pg-radius); }

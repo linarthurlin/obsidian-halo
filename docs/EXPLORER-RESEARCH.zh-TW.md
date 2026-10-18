@@ -1,6 +1,6 @@
 # Personal Glass 檔案導覽研究
 
-實作更新：研究之後已在 0.2.0 整合原創唯讀導覽器與 Notebook Navigator tokens，並用獨立合成測試庫驗證。下文保留研究當時的證據範圍；最新功能與測試見 [導覽器說明](NAVIGATOR.zh-TW.md)及 [測試紀錄](TESTING.md)。
+實作更新：研究之後已在 0.2.0 整合原創唯讀導覽器與 Notebook Navigator tokens，並用獨立合成測試庫驗證。下文保留研究當時的證據範圍；最新功能與測試見 [導覽器說明](https://github.com/linarthurlin/obsidian-personal-glass-companion/blob/main/docs/NAVIGATOR.zh-TW.md)及 [測試紀錄](TESTING.md)。
 
 研究日期：2026-10-17。範圍：Windows Obsidian、鍵盤導覽、中文／英文混合筆記與 Personal Glass 視覺整合。這輪僅研究與記錄，未安裝外掛、修改產品程式、搬動筆記或變更 vault 設定。
 
