@@ -42,6 +42,8 @@ body[data-personal-images='square'] .markdown-source-view.mod-cm6 .image-embed i
   border: 1px solid var(--personal-border);
 }
 .markdown-rendered pre { padding: 1em 1.15em; }
+.markdown-rendered pre { max-width: 100%; overflow-x: auto; }
+.markdown-rendered img { max-width: 100%; height: auto; }
 .markdown-rendered :not(pre) > code { border-radius: 4px; padding: 0.15em 0.35em; }
 .markdown-rendered .table-wrapper { overflow-x: auto; border-radius: var(--personal-radius-menu); }
 .markdown-rendered table { border-collapse: separate; border-spacing: 0; margin-block: 1em; }
@@ -55,12 +57,3 @@ body[data-personal-images='square'] .markdown-source-view.mod-cm6 .image-embed i
 .markdown-source-view.mod-cm6 .cm-content { caret-color: var(--personal-accent); }
 .markdown-source-view.mod-cm6 .cm-formatting { color: var(--personal-muted); }
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-header { padding-bottom: 0.2em; }
-/* Crisp Craft remains the owner of Reading View components. Map shared tokens only. */
-.markdown-reading-view.crisp-craft-enabled {
-  --cc-radius-sm: var(--personal-radius-control);
-  --cc-radius-md: var(--personal-radius-callout);
-  --cc-radius-lg: var(--personal-radius-card);
-  --cc-accent: var(--personal-accent);
-  --cc-text: var(--personal-text);
-  --cc-muted: var(--personal-muted);
-}

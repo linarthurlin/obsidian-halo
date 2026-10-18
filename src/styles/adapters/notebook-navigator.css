@@ -1,5 +1,5 @@
 /* Original token adapter. Notebook Navigator remains a separately installed GPL plugin. */
-body {
+body.theme-light, body.theme-dark {
   --nn-theme-foreground: var(--personal-text);
   --nn-theme-foreground-muted: var(--personal-muted);
   --nn-theme-nav-bg: color-mix(in srgb, var(--personal-base) var(--personal-sidebar-alpha), transparent);
@@ -7,24 +7,25 @@ body {
   --nn-theme-mobile-bg: var(--personal-panel);
   --nn-theme-navitem-name-color: var(--personal-text);
   --nn-theme-navitem-icon-color: var(--personal-muted);
-  --nn-theme-navitem-border-radius: 8px;
+  --nn-theme-navitem-border-radius: var(--personal-radius-control);
   --nn-theme-navitem-selected-bg: color-mix(in srgb, var(--personal-accent) 14%, transparent);
   --nn-theme-navitem-selected-name-color: var(--personal-text);
   --nn-theme-navitem-selected-inactive-bg: var(--background-modifier-hover);
   --nn-theme-file-name-color: var(--personal-text);
   --nn-theme-file-preview-color: var(--personal-muted);
-  --nn-theme-file-selected-bg: color-mix(in srgb, var(--personal-accent) 14%, transparent);
-  --nn-theme-file-selected-name-color: var(--personal-text);
+  /* This upstream token is consumed as a color, never as a gradient. */
+  --nn-theme-file-selected-bg: var(--pg-selection-start);
+  --nn-theme-file-selected-inactive-bg: var(--pg-selection-start);
+  --nn-theme-file-selected-name-color: var(--pg-selection-text);
+  --nn-theme-file-selected-preview-color: var(--pg-selection-text);
+  --nn-theme-file-selected-date-color: var(--pg-selection-text);
+  --nn-theme-file-selected-word-count-color: var(--pg-selection-text);
+  --nn-theme-file-selected-parent-color: var(--pg-selection-text);
+  --nn-theme-file-border-radius: var(--pg-selection-radius);
+  --nn-theme-file-feature-border-radius: var(--personal-radius-menu);
+  --nn-theme-navitem-hover-bg: var(--pg-row-hover);
   --nn-theme-list-separator-color: var(--personal-border);
   --nn-theme-list-search-border-color: var(--personal-border);
   --nn-theme-nav-indent-guide-color: var(--personal-border);
   --nn-theme-navitem-count-color: var(--personal-muted);
 }
-/* Adapter for existing table/canvas/cursor tools: keep geometry and behavior owned by their plugins. */
-.canvas-wrapper { --canvas-background: var(--personal-base); }
-.canvas-node-container { border-radius: var(--personal-radius-callout); }
-.markdown-source-view.mod-cm6 .cm-table-widget { border-radius: var(--personal-radius-menu); }
-.pg-navigator { background: color-mix(in srgb, var(--personal-base) var(--personal-sidebar-alpha), transparent); }
-
-/* Agent owns its DOM and behavior; this adapter only supplies shared visual tokens. */
-.pga-workbench { --pga-surface: var(--pg-surface); --pga-text: var(--pg-text); --pga-muted: var(--pg-muted); --pga-accent: var(--pg-accent); --pga-radius: var(--pg-radius); }

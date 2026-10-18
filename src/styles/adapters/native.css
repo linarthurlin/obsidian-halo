@@ -1,0 +1,4 @@
+/* Adapter for existing table/canvas/cursor tools: keep geometry and behavior owned by their plugins. */
+.canvas-wrapper { --canvas-background: var(--personal-base); }
+.canvas-node-container { border-radius: var(--personal-radius-callout); }
+.markdown-source-view.mod-cm6 .cm-table-widget { border-radius: var(--personal-radius-menu); }

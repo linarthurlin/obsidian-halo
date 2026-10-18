@@ -24,6 +24,8 @@ The theme can style supported plugins through documented tokens and scoped adapt
 
 [Subtle surfaces and optional appearance settings](docs/SURFACES.zh-TW.md): original low-opacity backgrounds, opaque flat selection and focus mode. After `npm run preview`, visit `/surfaces` for interactive synthetic light/dark and opacity controls.
 
+[Navigation states and accessibility branch previews](docs/STATES.zh-TW.md): visit `/states` to inspect synthetic Explorer/Navigator selection, keyboard focus and the shipped print/reduced-transparency rules. Optional Style Settings also exposes paired selection colors and corner radius.
+
 ## Develop
 
 Node.js 22.12+ and npm. Run independently in this repo:

@@ -1,14 +1,15 @@
 @media (prefers-reduced-motion: reduce) {
-  body { --personal-duration: 0ms; }
+  body { --personal-duration: 0ms !important; }
 }
-body[data-personal-motion='reduced'] { --personal-duration: 0ms; }
+body[data-personal-motion='reduced'] { --personal-duration: 0ms !important; }
 @media (prefers-reduced-transparency: reduce) {
-  body { --personal-panel-alpha: 100% !important; --personal-sidebar-alpha: 100% !important; }
+  body { --personal-panel-alpha: 100% !important; --personal-sidebar-alpha: 100% !important; --personal-overlay-alpha: 100% !important; --personal-overlay-blur: 0px !important; }
   .app-container { background: var(--personal-base) !important; }
   .modal, .menu, .suggestion-container, .popover { backdrop-filter: none !important; background: var(--personal-panel) !important; }
 }
 @media (forced-colors: active) {
-  .app-container, .workspace-tabs, .workspace-leaf-content, .callout, .menu, .suggestion-container {
+  body { --pg-focus-color: Highlight; --pg-row-hover: Canvas; }
+  .app-container, .workspace-tabs, .workspace-leaf-content, .callout, .modal, .popover, .menu, .suggestion-container {
     background: Canvas !important;
     color: CanvasText !important;
     box-shadow: none !important;
@@ -18,8 +19,12 @@ body[data-personal-motion='reduced'] { --personal-duration: 0ms; }
   :focus-visible { outline-color: Highlight !important; }
 }
 @media print {
-  body { --personal-panel: #fff; --personal-base: #fff; --personal-text: #111; --personal-muted: #444; --personal-accent: #333; }
-  .markdown-rendered { color: #111; background: #fff; }
-  .markdown-rendered :is(img, .callout, pre, blockquote) { box-shadow: none; backdrop-filter: none; }
-  .markdown-rendered .callout { background: #f7f7f7; border-color: #bbb; break-inside: avoid; }
+  body { --personal-panel: #fff !important; --personal-base: #fff !important; --personal-text: #111 !important; --personal-muted: #444 !important; --personal-accent: #333 !important; }
+  .markdown-rendered { color: #111 !important; background: #fff !important; }
+  .markdown-rendered :is(img, .callout, pre, blockquote) { box-shadow: none !important; backdrop-filter: none !important; }
+  .markdown-rendered .callout { background: #f7f7f7 !important; border-color: #bbb !important; break-inside: avoid; }
+  .markdown-rendered pre { white-space: pre-wrap; overflow-wrap: anywhere; overflow: visible; }
+  .markdown-rendered :is(.table-wrapper, .table-wrap) { overflow: visible; }
+  .markdown-rendered table { min-width: 0 !important; width: 100%; table-layout: fixed; }
+  .markdown-rendered :is(th, td) { overflow-wrap: anywhere; }
 }

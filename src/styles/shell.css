@@ -34,6 +34,8 @@ body {
   padding-block: 5px;
 }
 .nav-file-title.is-active { background: var(--background-modifier-hover); color: var(--text-normal); }
+.nav-file-title:not(.is-active):hover { background: var(--pg-row-hover); }
+.nav-file-title:focus-visible { outline: var(--pg-focus-width) solid var(--pg-focus-color); outline-offset: -2px; }
 .view-header { padding-inline: 14px; }
 .modal, .menu, .suggestion-container, .popover {
   border-radius: var(--personal-radius-card);

@@ -3,6 +3,32 @@
 name: Personal Glass
 id: personal-glass-theme
 settings:
+  - id: pg-selection-start
+    title: Selection gradient start
+    type: variable-themed-color
+    format: hex
+    default-light: '#e9d9ba'
+    default-dark: '#514a39'
+  - id: pg-selection-end
+    title: Selection gradient end
+    type: variable-themed-color
+    format: hex
+    default-light: '#c8dacb'
+    default-dark: '#354c41'
+  - id: pg-selection-text
+    title: Selection text
+    type: variable-themed-color
+    format: hex
+    default-light: '#252b25'
+    default-dark: '#f1f4ef'
+  - id: pg-selection-radius
+    title: Selection corner radius
+    type: variable-number-slider
+    default: 14
+    min: 0
+    max: 20
+    step: 1
+    format: px
   - id: pg-surfaces-focus
     title: Opaque focus surfaces
     description: Disable panel transparency. File selection always stays opaque.
@@ -66,6 +92,9 @@ body {
   --personal-overlay-blur: 0px;
   --personal-overlay-alpha: 98%;
   --pg-selection-radius: 14px;
+  --pg-row-hover: var(--background-modifier-hover);
+  --pg-focus-color: var(--personal-accent);
+  --pg-focus-width: 2px;
   --radius-s: var(--personal-radius-control);
   --radius-m: var(--personal-radius-menu);
   --radius-l: var(--personal-radius-card);

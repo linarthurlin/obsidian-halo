@@ -29,13 +29,20 @@ body .nn-file.nn-selected .nn-file-content::before {
 }
 body .pg-file:is(.is-selected, [aria-current='page']) :is(.pg-file-title,.pg-file-path,.pg-file-preview,.pg-file-icon),
 body .nav-file-title.is-active, body .pg-selection-preview,
-body .nn-file.nn-selected :is(.nn-file-name,.nn-file-preview,.nn-file-date) { color: var(--pg-selection-text); }
+body .nn-file.nn-selected :is(.nn-file-name:not([data-has-color='true']),.nn-file-preview,.nn-file-date) { color: var(--pg-selection-text); }
 body .pg-file[aria-current='page']::before { content: none; }
 body .pg-file[aria-current='page'] .pg-file-title,
 body .nav-file-title.is-active .nav-file-title-content { font-weight: 650; }
 .pg-selection-preview { margin-block: 12px 24px; padding: 16px 20px; }
 .pg-selection-preview strong, .pg-selection-preview span { display: block; }
 .pg-selection-preview span { margin-top: 6px; }
+/* Preserve connected geometry for Notebook Navigator multi-selection. */
+body .nn-file.nn-selected.nn-has-selected-above .nn-file-content::before {
+  border-start-start-radius: 0; border-start-end-radius: 0;
+}
+body .nn-file.nn-selected.nn-has-selected-below .nn-file-content::before {
+  border-end-start-radius: 0; border-end-end-radius: 0;
+}
 @media (prefers-reduced-transparency: reduce) {
   body { --pg-selection-light-opacity: 100% !important; --pg-selection-dark-opacity: 100% !important; --pg-selection-blur: 0px !important; }
   body { --pg-selection-text: var(--pg-selection-light-opaque-text, #252b25); }

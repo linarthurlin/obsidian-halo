@@ -1,0 +1,2 @@
+/* Agent owns its DOM and behavior; this adapter only supplies shared visual tokens. */
+.pga-workbench { --pga-surface: var(--pg-surface); --pga-text: var(--pg-text); --pga-muted: var(--pg-muted); --pga-accent: var(--pg-accent); --pga-radius: var(--pg-radius); }
