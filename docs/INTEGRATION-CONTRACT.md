@@ -18,3 +18,7 @@ Companion view classes: `.pg-navigator`, `.pg-file`, `[aria-current='page']`. Ag
 Third-party adaptations remain isolated in the theme's CSS. Prefer documented tokens; selectors may require per-version maintenance. Canvas/iframe/rendered bitmap internals cannot be promised full theme coverage.
 
 Changing a public token/class requires a compatible transition and cross-repository release notes. Independent versions need not match. Test theme alone, each plugin alone with the default Obsidian theme, and all three together before declaring runtime compatibility.
+
+## Theme 0.4 surface precedence
+
+Default panel/sidebar opacity is 96%/92%; companion `glass` uses 94%/88%. The Theme-only optional Style Settings class `pg-surfaces-focus` and companion `data-personal-surface='focus'` force opaque panel/sidebar/overlay variables with `!important`, overriding normal inline sliders. Accessibility media fallbacks remain authoritative. Other appearance variables follow normal cascade (inline inputs override normal rules; Style Settings themed colors may override palette rules). Never apply opacity or filters to text containers. `--personal-overlay-alpha` defaults to 98%, `--personal-overlay-blur` to 0px, and `--pg-selection-radius` to 14px. Existing public aliases remain unchanged; selections remain flat and opaque.

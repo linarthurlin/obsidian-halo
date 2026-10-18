@@ -22,6 +22,8 @@ The theme can style supported plugins through documented tokens and scoped adapt
 
 [Flat selection preview](docs/screenshots/flat-selection.jpg) · [Offline SVG skill](skills/personal-glass-svg/SKILL.md).
 
+[Subtle surfaces and optional appearance settings](docs/SURFACES.zh-TW.md): original low-opacity backgrounds, opaque flat selection and focus mode. After `npm run preview`, visit `/surfaces` for interactive synthetic light/dark and opacity controls.
+
 ## Develop
 
 Node.js 22.12+ and npm. Run independently in this repo:

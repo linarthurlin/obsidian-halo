@@ -22,7 +22,7 @@ body .nn-file.nn-selected .nn-file-content::before {
     var(--pg-selection-start), var(--pg-selection-end)) !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
-  border-radius: 14px;
+  border-radius: var(--pg-selection-radius);
   box-shadow: none !important;
   border-color: transparent;
   color: var(--pg-selection-text);
@@ -39,7 +39,7 @@ body .nav-file-title.is-active .nav-file-title-content { font-weight: 650; }
 @media (prefers-reduced-transparency: reduce) {
   body { --pg-selection-light-opacity: 100% !important; --pg-selection-dark-opacity: 100% !important; --pg-selection-blur: 0px !important; }
   body { --pg-selection-text: var(--pg-selection-light-opaque-text, #252b25); }
-  body.theme-dark { --pg-selection-text: var(--pg-selection-dark-opaque-text, #252b25); }
+  body.theme-dark { --pg-selection-text: var(--pg-selection-dark-opaque-text, #f1f4ef); }
 }
 @media (forced-colors: active) {
   body .pg-file:is(.is-selected, [aria-current='page']), body .nav-file-title.is-active,

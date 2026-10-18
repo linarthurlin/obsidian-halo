@@ -3,6 +3,48 @@
 name: Personal Glass
 id: personal-glass-theme
 settings:
+  - id: pg-surfaces-focus
+    title: Opaque focus surfaces
+    description: Disable panel transparency. File selection always stays opaque.
+    type: class-toggle
+    default: false
+  - id: personal-panel-alpha
+    title: Editor opacity
+    type: variable-number-slider
+    default: 96
+    min: 90
+    max: 100
+    step: 1
+    format: '%'
+  - id: personal-sidebar-alpha
+    title: Sidebar opacity
+    type: variable-number-slider
+    default: 92
+    min: 85
+    max: 100
+    step: 1
+    format: '%'
+  - id: personal-overlay-blur
+    title: Menu blur (px)
+    description: Small menus only; editor and selection never blur.
+    type: variable-number-slider
+    default: 0
+    min: 0
+    max: 12
+    step: 1
+    format: px
+  - id: personal-glow-one
+    title: Ambient tint one
+    type: variable-themed-color
+    format: hex
+    default-light: '#d8decb'
+    default-dark: '#343c2d'
+  - id: personal-glow-two
+    title: Ambient tint two
+    type: variable-themed-color
+    format: hex
+    default-light: '#e8d9ca'
+    default-dark: '#40352d'
   - id: personal-content-width
     title: Document width
     type: variable-number-slider
@@ -21,6 +63,9 @@ body {
   --personal-radius-panel: 20px;
   --personal-ease: cubic-bezier(0.2, 0, 0, 1);
   --personal-duration: 100ms;
+  --personal-overlay-blur: 0px;
+  --personal-overlay-alpha: 98%;
+  --pg-selection-radius: 14px;
   --radius-s: var(--personal-radius-control);
   --radius-m: var(--personal-radius-menu);
   --radius-l: var(--personal-radius-card);
@@ -60,8 +105,8 @@ body {
   --personal-border: rgb(58 65 48 / 14%);
   --personal-highlight: rgb(255 255 255 / 80%);
   --personal-shadow: 0 8px 28px rgb(32 37 27 / 7%);
-  --personal-panel-alpha: 94%;
-  --personal-sidebar-alpha: 72%;
+  --personal-panel-alpha: 96%;
+  --personal-sidebar-alpha: 92%;
 }
 .theme-dark {
   color-scheme: dark;
@@ -77,7 +122,7 @@ body {
   --personal-highlight: rgb(255 255 255 / 7%);
   --personal-shadow: 0 8px 32px rgb(0 0 0 / 20%);
   --personal-panel-alpha: 96%;
-  --personal-sidebar-alpha: 78%;
+  --personal-sidebar-alpha: 92%;
 }
 .theme-light[data-personal-palette='mineral'] {
   --personal-base: #f0f3f6;

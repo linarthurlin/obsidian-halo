@@ -38,7 +38,7 @@ body {
 .modal, .menu, .suggestion-container, .popover {
   border-radius: var(--personal-radius-card);
   border: 1px solid var(--personal-border);
-  background: color-mix(in srgb, var(--personal-panel) 97%, transparent);
+  background: color-mix(in srgb, var(--personal-panel) var(--personal-overlay-alpha), transparent);
   box-shadow: var(--personal-shadow), inset 0 1px 0 var(--personal-highlight);
 }
 .menu-item, .suggestion-item { border-radius: var(--personal-radius-control); }
@@ -50,8 +50,8 @@ button, .clickable-icon, .nav-file-title, .menu-item, .suggestion-item {
   outline-offset: 2px;
 }
 body[data-personal-surface='glass'] {
-  --personal-panel-alpha: 88%;
-  --personal-sidebar-alpha: 55%;
+  --personal-panel-alpha: 94%;
+  --personal-sidebar-alpha: 88%;
 }
 body[data-personal-surface='focus'] {
   --personal-panel-alpha: 100%;
@@ -64,9 +64,16 @@ body[data-personal-native='active']:not([data-personal-surface='portable']) .app
 /* Only small transient surfaces get extra in-app blur; do not blur the editor. */
 @supports (backdrop-filter: blur(8px)) {
   body:not([data-personal-native='active']) :is(.menu, .suggestion-container) {
-    backdrop-filter: blur(12px);
-    background: color-mix(in srgb, var(--personal-panel) 93%, transparent);
+    backdrop-filter: blur(var(--personal-overlay-blur));
   }
+}
+/* Explicit focus wins over user slider values and companion glass mode. */
+body.pg-surfaces-focus,
+body[data-personal-surface='focus'] {
+  --personal-panel-alpha: 100% !important;
+  --personal-sidebar-alpha: 100% !important;
+  --personal-overlay-alpha: 100% !important;
+  --personal-overlay-blur: 0px !important;
 }
 @media (max-width: 900px) {
   .workspace-split.mod-root { padding: 4px; gap: 4px; }
