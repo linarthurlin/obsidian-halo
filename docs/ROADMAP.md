@@ -11,7 +11,10 @@
 - [ ] P1：無障礙、列印與已審閱的合成視覺回歸基準。
 - [ ] P2：配合 Companion 驗證真實 Windows 材質、DPI、多螢幕及回退外觀。
 - [ ] P2：語意 tokens／adapter 分檔、純外觀設定與 CSS 重繪成本優化。
+- [ ] 候選 P1：依 Transparent 研究提案設計原創輕透表面模式，保留不透明平面選取；先完成視覺選定與 Obsidian／效能驗證。
 
 目前未對個人 Vault 執行部署或知識整理。舊 monolith 測試不代表拆分後的 runtime 驗證。
 
 詳細成果、驗收方式、程式觀察與可優化項目見 [工作進度](PROGRESS.zh-TW.md)。
+
+新增候選的依據與邊界見 [Transparent 適配研究](TRANSPARENT-RESEARCH.zh-TW.md)；此項尚未實作。
