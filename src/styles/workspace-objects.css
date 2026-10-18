@@ -1,0 +1,55 @@
+/* Native workspace objects: no DOM mutations or plugin behavior. */
+body {
+  --tab-text-color: var(--personal-muted);
+  --tab-text-color-active: var(--personal-text);
+  --tab-text-color-focused-active: var(--personal-text);
+  --tab-text-color-focused-active-current: var(--personal-text);
+  --tab-divider-color: var(--personal-border);
+  --input-radius: 8px;
+  --input-border-width: 1px;
+  --input-shadow: none;
+  --input-shadow-hover: none;
+  --input-shadow-focus: 0 0 0 2px var(--personal-accent);
+  --input-height: 34px;
+  --search-result-background: var(--personal-panel);
+  --search-result-file-title-color: var(--personal-text);
+  --search-result-file-matched-text-color: var(--personal-text);
+  --search-result-file-matched-text-background: var(--text-highlight-bg);
+}
+.suggestion-item.is-selected, .menu-item.selected:not(.is-disabled) {
+  background: var(--pg-selection-background); color: var(--pg-selection-text); border-radius: 8px;
+}
+.suggestion-item.is-selected :is(.suggestion-title, .suggestion-note, .suggestion-content, .suggestion-aux) { color: inherit; }
+.suggestion-note, .suggestion-aux { color: var(--personal-muted); font-size: 0.85em; }
+.suggestion-highlight { font-weight: 650; }
+.suggestion-item { padding: 8px 10px; }
+.suggestion-hotkey { border: 1px solid var(--personal-border); border-radius: 4px; padding-inline: 4px; font-size: 0.8em; }
+.view-header-breadcrumb, .view-header-breadcrumb-separator { color: var(--personal-muted); font-size: 0.85em; }
+.status-bar { color: var(--personal-muted); font-size: 0.8em; }
+.workspace-tab-header.is-active { background: var(--personal-object-soft); }
+/* Outline child rows, not a global tree rule: preserve Explorer folder geometry. */
+.workspace-leaf-content[data-type='outline'] .tree-item-children { border-inline-start: 0; padding-inline-start: 18px; }
+.workspace-leaf-content[data-type='outline'] .tree-item-children .tree-item-self {
+  margin-block: 6px; padding: 9px 12px; border: 1px solid var(--personal-border);
+  border-radius: 9px; background: var(--personal-object-soft); color: var(--personal-text);
+}
+.workspace-leaf-content[data-type='outline'] .tree-item-children .tree-item-self:hover { background: var(--personal-object-hover); border-color: var(--personal-accent); }
+.workspace-leaf-content[data-type='outline'] .tree-item-self.is-active { background: var(--pg-selection-background); color: var(--pg-selection-text); border-radius: 8px; }
+.workspace-leaf-content[data-type='outline'] .tree-item-self:focus-visible { outline: 2px solid var(--personal-accent); outline-offset: 2px; }
+.search-result-file-title { color: var(--personal-text); font-weight: 600; }
+.search-result-file-match { border-radius: 8px; padding: 8px 10px; }
+.search-result-file-match:hover { background: var(--personal-object-soft); }
+.search-result-file-matched-text { background: var(--text-highlight-bg); color: var(--personal-text); }
+.backlink-pane .search-result-file-match { border: 1px solid var(--personal-border); margin-block: 6px; }
+.setting-item :is(input[type='text'], input[type='number'], input[type='search'], select, textarea),
+.metadata-property-value :is(input[type='text'], input[type='number'], input[type='date']) {
+  border-radius: 8px; border: 1px solid var(--personal-border); background: var(--personal-panel); color: var(--personal-text);
+}
+.setting-item :is(input, textarea, select)[aria-invalid='true'] { border-color: var(--personal-danger); }
+.setting-item :is(input, button, select, textarea):disabled { color: var(--personal-muted); cursor: not-allowed; }
+.notice { border: 1px solid var(--personal-border); border-radius: 10px; background: var(--personal-panel); color: var(--personal-text); box-shadow: var(--personal-shadow); }
+.tooltip { border-radius: 6px; padding: 5px 9px; background: var(--personal-text); color: var(--personal-panel); font-size: 0.8em; }
+.search-empty-state, .backlink-pane .search-empty-state { color: var(--personal-muted); padding: 16px; border: 1px dashed var(--personal-border); border-radius: 10px; }
+.canvas-node-container { background: var(--personal-panel); border-color: var(--personal-border); }
+.canvas-node.is-selected .canvas-node-container { outline: 2px solid var(--personal-accent); outline-offset: 2px; }
+.canvas-group-label { color: var(--personal-muted); }

@@ -1,0 +1,9 @@
+/* Content plugins inherit native document variables. Explicit card opt-in is optional. */
+.markdown-rendered table.dataview { color: var(--table-text-color); background: var(--table-background); }
+.markdown-rendered table.dataview th { background: var(--table-header-background); color: var(--table-header-color); }
+.pg-plugin-card { background: var(--personal-panel); color: var(--personal-text); border: 1px solid var(--personal-border); border-radius: 12px; padding: 12px; }
+.pg-plugin-card:focus-visible { outline: 2px solid var(--personal-accent); outline-offset: 2px; }
+.pg-plugin-lane { background: var(--personal-object-soft); border-radius: 10px; padding: 10px; }
+/* Kanban 2.0.51 source-contract review; geometry/dragging remain plugin-owned. */
+.kanban-plugin__board .kanban-plugin__lane { background: var(--personal-object-soft); border-radius: 10px; border-color: var(--personal-border); }
+.kanban-plugin__board .kanban-plugin__item { background: var(--personal-panel); color: var(--personal-text); border: 1px solid var(--personal-border); border-radius: 12px; }

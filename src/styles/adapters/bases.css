@@ -1,0 +1,26 @@
+/* Documented native Bases variables; absent on older Obsidian versions = inert. */
+body {
+  --bases-embed-border-width: 1px;
+  --bases-embed-border-color: var(--personal-border);
+  --bases-embed-border-radius: 12px;
+  --bases-table-container-border-width: 1px;
+  --bases-table-container-border-radius: 10px;
+  --bases-table-header-weight: 600;
+  --bases-table-header-color: var(--personal-muted);
+  --bases-table-header-background: var(--personal-object-soft);
+  --bases-table-header-background-hover: var(--personal-object-hover);
+  --bases-table-border-color: var(--personal-border);
+  --bases-table-row-background-hover: var(--personal-object-soft);
+  --bases-table-row-height: 40px;
+  --bases-table-cell-radius-active: 4px;
+  --bases-table-cell-shadow-active: 0 0 0 2px var(--personal-accent);
+  --bases-table-cell-background-active: var(--personal-object-soft);
+  --bases-table-cell-background-disabled: var(--personal-base);
+  --bases-cards-container-background: transparent;
+  --bases-cards-background: var(--personal-panel);
+  --bases-cards-cover-background: var(--personal-object-soft);
+  --bases-cards-line-height: 1.5;
+  --bases-cards-border-width: 1px;
+  --bases-cards-shadow: none;
+  --bases-cards-shadow-hover: 0 0 0 1px var(--personal-accent);
+}

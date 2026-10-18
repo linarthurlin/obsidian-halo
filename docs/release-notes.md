@@ -1,9 +1,9 @@
-Personal Glass Theme 0.4.1 — adapters and accessibility prerelease.
+Personal Glass Theme 0.5.0 — approved component foundations prerelease.
 
-Split five original visual adapters into independent CSS modules. Add shared hover/focus tokens and optional themed selection colors, foreground and corner-radius settings while retaining opaque flat selection.
+Implement document and workspace CSS based on the reviewed 22-object atlas: tags, Properties, binary checkboxes, tables, lists, links, Callouts, embeds, code, footnotes, formula/diagram containers, tabs, Outline, search, controls and notices. Apply the four review revisions: rounded checks, no nested-list guide, PDF document icon, and soft rounded Outline child rows.
 
-Review the Notebook Navigator 3.4.3 source contract at commit 667ece262dda7645c78a76812b12a70d788aae24: use solid color tokens, preserve selected metadata contrast and connected multi-selection corners, and retain custom filename colors. No upstream implementation is bundled.
+Add optional compact/striped document tables, official Bases variables, Dataview/native-task inheritance and a scoped Kanban adapter reviewed against 2.0.51 source. Third-party plugin runtime compatibility is not certified. Tabler check/PDF vector data and MIT attribution are embedded in the stylesheet, preserving the existing theme-only two-file installation.
 
-Fix print shadow cascade, code/table wrapping and reduced-motion/transparency overlay overrides. Add synthetic navigation-state and media-branch previews with browser inspection evidence. Eleven tests pass; package boundaries and checksums are verified.
+Fourteen tests and release package/checksum validation pass. Synthetic production-CSS fixtures were inspected in light/dark; checkbox keyboard operation, table density and three Callout color pairs were checked. Print/forced-colors branches are synthetic inspection, not OS or print-engine emulation. Real Obsidian/Style Settings/Bases/plugin integration, full interaction states, DPI/materials and performance remain pending.
 
-Synthetic branch activation is not OS emulation, print-engine testing or real plugin certification. Fresh Obsidian integration, real system preferences, print pagination, Windows materials/DPI/multi-monitor and performance remain pending. No vault deployment or note changes.
+No vault deployment, note writes or changes to the Companion/Knowledge Agent repositories.

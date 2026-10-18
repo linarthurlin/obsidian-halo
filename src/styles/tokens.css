@@ -3,6 +3,14 @@
 name: Personal Glass
 id: personal-glass-theme
 settings:
+  - id: pg-compact-tables
+    title: Compact document tables
+    type: class-toggle
+    default: false
+  - id: pg-striped-tables
+    title: Alternating document table rows
+    type: class-toggle
+    default: false
   - id: pg-selection-start
     title: Selection gradient start
     type: variable-themed-color
@@ -129,6 +137,7 @@ body {
   --personal-muted: #62665e;
   --personal-accent: #576d48;
   --personal-accent-hover: #435836;
+  --personal-danger: #a65d63;
   --personal-glow-one: #d8decb;
   --personal-glow-two: #e8d9ca;
   --personal-border: rgb(58 65 48 / 14%);
@@ -145,6 +154,7 @@ body {
   --personal-muted: #b2b5a6;
   --personal-accent: #b5c99c;
   --personal-accent-hover: #c9dcb5;
+  --personal-danger: #dfa3a8;
   --personal-glow-one: #343c2d;
   --personal-glow-two: #40352d;
   --personal-border: rgb(228 232 218 / 14%);

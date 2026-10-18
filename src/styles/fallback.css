@@ -8,6 +8,7 @@ body[data-personal-motion='reduced'] { --personal-duration: 0ms !important; }
   .modal, .menu, .suggestion-container, .popover { backdrop-filter: none !important; background: var(--personal-panel) !important; }
 }
 @media (forced-colors: active) {
+  body { --personal-panel: Canvas !important; --personal-base: Canvas !important; --personal-text: CanvasText !important; --personal-muted: CanvasText !important; --personal-accent: LinkText !important; --personal-accent-hover: LinkText !important; }
   body { --pg-focus-color: Highlight; --pg-row-hover: Canvas; }
   .app-container, .workspace-tabs, .workspace-leaf-content, .callout, .modal, .popover, .menu, .suggestion-container {
     background: Canvas !important;
@@ -17,6 +18,13 @@ body[data-personal-motion='reduced'] { --personal-duration: 0ms !important; }
     border-color: CanvasText !important;
   }
   :focus-visible { outline-color: Highlight !important; }
+  body { --personal-object-soft: Canvas; --personal-object-hover: Canvas; --personal-pdf-color: CanvasText; --tag-color: LinkText; --tag-background: Canvas; --tag-border-color: CanvasText; --metadata-label-text-color: CanvasText; --table-header-color: CanvasText; --table-header-background: Canvas; --table-selection: Highlight; --table-selection-border-color: Highlight; --table-text-color: CanvasText; }
+  .metadata-property, .markdown-rendered a.tag, .file-embed { border-color: CanvasText !important; color: CanvasText !important; background: Canvas !important; }
+  .suggestion-item.is-selected, .menu-item.selected { background: Highlight !important; color: HighlightText !important; }
+  .workspace-leaf-content[data-type='outline'] .tree-item-self { background: Canvas !important; color: CanvasText !important; border-color: CanvasText !important; }
+  .workspace-leaf-content[data-type='outline'] .tree-item-self.is-active { background: Highlight !important; color: HighlightText !important; }
+  :is(.metadata-property-value input[type='checkbox'], .task-list-item-checkbox) { appearance: auto !important; -webkit-appearance: auto !important; background-image: none !important; }
+  :is(.metadata-property-value input[type='checkbox'], .task-list-item-checkbox)::after { display: none !important; }
 }
 @media print {
   body { --personal-panel: #fff !important; --personal-base: #fff !important; --personal-text: #111 !important; --personal-muted: #444 !important; --personal-accent: #333 !important; }
@@ -27,4 +35,8 @@ body[data-personal-motion='reduced'] { --personal-duration: 0ms !important; }
   .markdown-rendered :is(.table-wrapper, .table-wrap) { overflow: visible; }
   .markdown-rendered table { min-width: 0 !important; width: 100%; table-layout: fixed; }
   .markdown-rendered :is(th, td) { overflow-wrap: anywhere; }
+  body { --personal-object-soft: #f7f7f7; --personal-object-hover: #f7f7f7; --personal-pdf-color: #111; --tag-background: #f7f7f7; --tag-color: #111; --table-header-color: #111; --table-header-background: #f7f7f7; --text-highlight-bg: #eee; }
+  .metadata-property { break-inside: avoid; }
+  :is(.metadata-property-value input[type='checkbox'], .task-list-item-checkbox) { appearance: auto !important; -webkit-appearance: auto !important; background-image: none !important; }
+  :is(.metadata-property-value input[type='checkbox'], .task-list-item-checkbox)::after { display: none !important; }
 }

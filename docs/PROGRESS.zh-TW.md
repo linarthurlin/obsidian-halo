@@ -1,4 +1,10 @@
-# 0.4.1 本輪增量
+# 0.5.0 本輪增量
+
+依核准的 22 類提案加入正式文件與工作區元件樣式、Bases 官方變數、Dataview／Tasks 原生繼承及 Kanban scoped adapter。四則 review 修訂已進入正式 CSS：圓角勾選框、無清單直線、內嵌 PDF 圖示、Outline 圓角子項。新增可選表格密度／斑馬紋，圖示授權隨 CSS 發布；仍只安裝 theme.css／manifest.json。
+
+14 項測試與合成瀏覽器明暗檢視；確認鍵盤勾選、表格密度與三類 Callout 對比。此為正式 CSS 實作與合成證據，真實 Obsidian、Bases／各外掛全部狀態與平台驗證仍待完成。詳見 [元件實作與完整覆蓋表](COMPONENTS.zh-TW.md)。未部署 Vault 或修改筆記、未改動另兩個 repo。
+
+# 0.4.1 前輪增量
 
 五個視覺 adapter 分檔完成；加入 hover／focus 語意 tokens 與 Theme 自有選取起色、終色、文字色、圓角設定。Notebook Navigator 3.4.3 固定來源契約已檢查，未宣稱 runtime 認證。修正列印卡片陰影、長程式碼／寬表格換行與無障礙覆寫；11 個測試及打包校驗通過，新增三種導覽結構與 CSS media 分支的瀏覽器合成檢查。
 

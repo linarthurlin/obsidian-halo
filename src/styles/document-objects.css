@@ -1,0 +1,176 @@
+/* Original document components. Native variables are shared with Live Preview. */
+body {
+  --personal-object-soft: color-mix(in srgb, var(--personal-accent) 8%, var(--personal-panel));
+  --personal-object-hover: color-mix(in srgb, var(--personal-accent) 12%, var(--personal-panel));
+  --personal-table-cell-padding: 0.65em 0.9em;
+  --tag-size: 0.82em;
+  --tag-color: var(--personal-accent);
+  --tag-color-hover: var(--personal-accent-hover);
+  --tag-background: var(--personal-object-soft);
+  --tag-background-hover: var(--personal-object-hover);
+  --tag-border-color: color-mix(in srgb, var(--personal-accent) 22%, transparent);
+  --tag-border-color-hover: var(--personal-accent);
+  --tag-border-width: 1px;
+  --tag-padding-x: 0.7em;
+  --tag-padding-y: 0.2em;
+  --tag-radius: 99px;
+  --tag-weight: 500;
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --metadata-background: transparent;
+  --metadata-padding: 0;
+  --metadata-border-width: 0;
+  --metadata-border-radius: var(--personal-radius-menu);
+  --metadata-gap: 0;
+  --metadata-divider-width: 1px;
+  --metadata-divider-color: var(--personal-border);
+  --metadata-divider-color-hover: color-mix(in srgb, var(--personal-accent) 30%, transparent);
+  --metadata-divider-color-focus: var(--personal-accent);
+  --metadata-property-padding: 8px 10px;
+  --metadata-property-radius: 8px;
+  --metadata-property-radius-hover: 8px;
+  --metadata-property-radius-focus: 8px;
+  --metadata-property-background: transparent;
+  --metadata-property-background-hover: var(--personal-object-soft);
+  --metadata-property-background-active: var(--personal-object-soft);
+  --metadata-label-font-size: 0.85em;
+  --metadata-label-font-weight: 400;
+  --metadata-label-text-color: var(--personal-muted);
+  --metadata-label-text-color-hover: var(--personal-text);
+  --metadata-input-text-color: var(--personal-text);
+  --metadata-input-height: 28px;
+  --metadata-input-font-size: 0.9em;
+  --metadata-input-background: transparent;
+  --metadata-input-background-hover: transparent;
+  --metadata-input-background-active: var(--personal-panel);
+  --checkbox-size: 20px;
+  --checkbox-radius: 6px;
+  --checkbox-color: var(--personal-accent);
+  --checkbox-color-hover: var(--personal-accent-hover);
+  --checkbox-marker-color: var(--personal-panel);
+  --checkbox-border-color: color-mix(in srgb, var(--personal-accent) 48%, var(--personal-panel));
+  --checkbox-border-color-hover: var(--personal-accent);
+  --checklist-done-color: var(--personal-muted);
+  --checklist-done-decoration: line-through;
+  --list-spacing: 0.3em;
+  --list-marker-color: var(--personal-accent);
+  --list-marker-color-hover: var(--personal-accent-hover);
+  --list-marker-color-collapsed: var(--personal-muted);
+  --indentation-guide-width: 0px;
+  --indentation-guide-width-active: 0px;
+  --indentation-guide-color: transparent;
+  --indentation-guide-color-active: transparent;
+  --table-background: var(--personal-panel);
+  --table-border-width: 1px;
+  --table-border-color: var(--personal-border);
+  --table-header-background: var(--personal-object-soft);
+  --table-header-background-hover: var(--personal-object-hover);
+  --table-header-color: var(--personal-muted);
+  --table-header-size: 0.85em;
+  --table-header-weight: 600;
+  --table-header-border-color: var(--personal-border);
+  --table-text-color: var(--personal-text);
+  --table-row-background-hover: var(--personal-object-soft);
+  --table-row-alt-background: transparent;
+  --table-row-alt-background-hover: var(--personal-object-hover);
+  --table-selection: color-mix(in srgb, var(--personal-accent) 16%, var(--personal-panel));
+  --table-selection-blend-mode: normal;
+  --table-selection-border-color: var(--personal-accent);
+  --table-selection-border-width: 2px;
+  --table-selection-border-radius: 4px;
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-decoration-thickness: 1px;
+  --link-unresolved-color: var(--personal-muted);
+  --link-unresolved-opacity: 1;
+  --link-unresolved-filter: none;
+  --link-unresolved-decoration-style: dashed;
+  --link-unresolved-decoration-color: var(--personal-muted);
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: underline;
+  --text-highlight-bg: color-mix(in srgb, var(--personal-accent) 18%, var(--personal-panel));
+  --code-keyword: var(--personal-accent);
+  --code-string: var(--personal-accent);
+  --code-comment: var(--personal-muted);
+  --code-function: var(--personal-text);
+  --code-property: var(--personal-text);
+  --h4-size: 1.05em;
+  --h5-size: 1em;
+  --h6-size: 0.9em;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+  --embed-border-start: 3px solid var(--personal-accent);
+  --embed-padding: 12px 16px;
+}
+body.pg-compact-tables { --personal-table-cell-padding: 0.35em 0.65em; }
+body.pg-striped-tables { --table-row-alt-background: color-mix(in srgb, var(--personal-accent) 4%, var(--personal-panel)); }
+.markdown-rendered a.tag {
+  display: inline-block; padding: var(--tag-padding-y) var(--tag-padding-x);
+  border: var(--tag-border-width) solid var(--tag-border-color); border-radius: var(--tag-radius);
+  background: var(--tag-background); color: var(--tag-color); font-size: var(--tag-size); font-weight: var(--tag-weight); text-decoration: none;
+}
+.markdown-rendered a.tag:hover { background: var(--tag-background-hover); border-color: var(--tag-border-color-hover); color: var(--tag-color-hover); }
+.metadata-container { background: var(--metadata-background); }
+.metadata-property { border-bottom: var(--metadata-divider-width) solid var(--metadata-divider-color); border-radius: var(--metadata-property-radius); padding: var(--metadata-property-padding); }
+.metadata-property:hover { background: var(--metadata-property-background-hover); }
+.metadata-property:focus-within { background: var(--metadata-property-background-active); }
+.metadata-property-key { color: var(--metadata-label-text-color); font-size: var(--metadata-label-font-size); }
+.metadata-property-value { color: var(--metadata-input-text-color); }
+.metadata-property-value .multi-select-pill { color: var(--tag-color); background: var(--tag-background); border: 1px solid var(--tag-border-color); border-radius: var(--tag-radius); }
+/* Preserve custom task-status markers; custom pixels apply only to native binary tasks. */
+:is(.metadata-property-value input[type='checkbox'],
+  .task-list-item:is([data-task=' '], [data-task='x'], :not([data-task])) > input.task-list-item-checkbox,
+  .HyperMD-task-line:is([data-task=' '], [data-task='x']) input.task-list-item-checkbox) {
+  appearance: none; -webkit-appearance: none; width: var(--checkbox-size); height: var(--checkbox-size);
+  flex-shrink: 0; vertical-align: middle; border: 1.5px solid var(--checkbox-border-color);
+  border-radius: var(--checkbox-radius); background: var(--personal-panel) center / 16px 16px no-repeat; cursor: pointer;
+}
+:is(.metadata-property-value input[type='checkbox'],
+  .task-list-item:is([data-task=' '], [data-task='x'], :not([data-task])) > input.task-list-item-checkbox,
+  .HyperMD-task-line:is([data-task=' '], [data-task='x']) input.task-list-item-checkbox):checked {
+  background-color: var(--checkbox-color); border-color: var(--checkbox-color); background-image: var(--personal-check-image);
+}
+:is(.metadata-property-value input[type='checkbox'],
+  .task-list-item:is([data-task=' '], [data-task='x'], :not([data-task])) > input.task-list-item-checkbox,
+  .HyperMD-task-line:is([data-task=' '], [data-task='x']) input.task-list-item-checkbox)::after { content: none; }
+:is(.metadata-property-value input[type='checkbox'], .task-list-item-checkbox):focus-visible { outline: 2px solid var(--personal-accent); outline-offset: 3px; }
+.markdown-rendered .task-list-item[data-task='x'] { color: var(--checklist-done-color); text-decoration: var(--checklist-done-decoration); }
+.markdown-rendered :is(ul, ol) :is(ul, ol) { border-inline-start: 0; }
+.markdown-rendered li::marker { color: var(--list-marker-color); }
+.markdown-rendered :is(th, td) { padding: var(--personal-table-cell-padding); border-color: var(--table-border-color); border-bottom: var(--table-border-width) solid var(--table-border-color); }
+.markdown-source-view.mod-cm6 .cm-table-widget :is(th, td) { padding: var(--personal-table-cell-padding); }
+.markdown-rendered table { border: var(--table-border-width) solid var(--table-border-color); border-radius: var(--personal-radius-menu); background: var(--table-background); }
+.markdown-rendered th { color: var(--table-header-color); background: var(--table-header-background); font-size: var(--table-header-size); font-weight: var(--table-header-weight); }
+.markdown-rendered tbody tr:nth-child(even) { background: var(--table-row-alt-background); }
+.markdown-rendered tbody tr:hover { background: var(--table-row-background-hover); }
+.markdown-rendered tr:last-child td { border-bottom: 0; }
+.markdown-rendered :is(a.internal-link, a.external-link) { color: var(--link-color); text-decoration: underline; text-underline-offset: 3px; }
+.markdown-rendered :is(a.internal-link, a.external-link):hover { background: var(--personal-object-soft); }
+.markdown-rendered a.internal-link.is-unresolved { opacity: 1; text-decoration: underline dashed; color: var(--personal-muted); }
+.markdown-rendered mark { color: var(--personal-text); background: var(--text-highlight-bg); border-radius: 3px; padding-inline: 0.15em; }
+.markdown-rendered pre { background: var(--code-background); color: var(--code-normal); }
+.markdown-rendered :not(pre) > code { background: var(--code-background); color: var(--code-normal); }
+.markdown-rendered :is(h5, h6) { color: var(--personal-text); }
+.markdown-rendered h5 { font-size: var(--h5-size); }
+.markdown-rendered h6 { font-size: var(--h6-size); color: var(--personal-muted); }
+.markdown-rendered .footnotes { margin-top: 1.5em; padding-top: 0.8em; border-top: 1px solid var(--personal-border); color: var(--personal-muted); font-size: 0.85em; }
+.markdown-rendered :is(.footnote-link, .footnote-backref) { color: var(--personal-accent); text-underline-offset: 3px; }
+.markdown-rendered .markdown-embed { border: 1px solid var(--personal-border); border-inline-start: var(--embed-border-start); padding: var(--embed-padding); }
+.markdown-embed-title { font-size: 0.85em; color: var(--personal-muted); }
+.markdown-rendered :is(.math-block, .mermaid) { max-width: 100%; overflow-x: auto; padding-block: 0.75em; }
+.markdown-rendered .math-block { text-align: center; border-radius: 10px; background: var(--personal-object-soft); }
+.markdown-rendered .mermaid svg { max-width: 100%; height: auto; }
+.file-embed { border: 1px solid var(--personal-border); border-radius: var(--personal-radius-menu); padding: 12px; }
+.file-embed-title { color: var(--personal-text); }
+.file-embed :is(.file-embed-size, .file-embed-description) { color: var(--personal-muted); font-size: 0.85em; }
+:is(.file-embed[src$='.pdf' i], .file-embed[src*='.pdf#' i]) .file-embed-icon {
+  display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 48px; flex-shrink: 0;
+  border: 1px solid color-mix(in srgb, var(--personal-pdf-color) 25%, var(--personal-panel)); border-radius: 10px;
+  background: color-mix(in srgb, var(--personal-pdf-color) 8%, var(--personal-panel));
+}
+:is(.file-embed[src$='.pdf' i], .file-embed[src*='.pdf#' i]) .file-embed-icon > svg { display: none; }
+:is(.file-embed[src$='.pdf' i], .file-embed[src*='.pdf#' i]) .file-embed-icon::before {
+  content: ''; width: 30px; height: 34px; background: var(--personal-pdf-color);
+  mask: var(--personal-pdf-mask) center / contain no-repeat; -webkit-mask: var(--personal-pdf-mask) center / contain no-repeat;
+}

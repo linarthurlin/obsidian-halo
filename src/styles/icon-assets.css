@@ -1,0 +1,24 @@
+/* Embedded Tabler check and file-type-pdf icons, modified colors. MIT License
+
+Copyright (c) 2020-2026 Paweł Kuna
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+ */
+body { --personal-check-image: url("data:image/svg+xml;base64,PCEtLQp0YWdzOiBbY2hlY2ssIGNoZWNrbWFyaywgdGljaywgZG9uZSwgeWVzLCBvaywgY29uZmlybSwgc3VjY2VzcywgYXBwcm92ZSwgY29ycmVjdCwgY29tcGxldGVdCmNhdGVnb3J5OiBTeXN0ZW0KdmVyc2lvbjogIjEuMCIKdW5pY29kZTogImVhNWUiCi0tPgo8c3ZnCiAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogIHdpZHRoPSIyNCIKICBoZWlnaHQ9IjI0IgogIHZpZXdCb3g9IjAgMCAyNCAyNCIKICBmaWxsPSJub25lIgogIHN0cm9rZT0iI2ZmZmVmYSIKICBzdHJva2Utd2lkdGg9IjIiCiAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogIHN0cm9rZS1saW5lam9pbj0icm91bmQiCj4KICA8cGF0aCBkPSJNNSAxMmw1IDVsMTAgLTEwIiAvPgo8L3N2Zz4K"); --personal-pdf-mask: url("data:image/svg+xml;base64,PCEtLQp0YWdzOiBbcGRmLCBhZG9iZSwgYWNyb2JhdCwgZG9jdW1lbnQsIHBvcnRhYmxlLWRvY3VtZW50LWZvcm1hdCwgZWJvb2ssIHByaW50LCBmaWxlLWZvcm1hdCwgZXh0ZW5zaW9uLCBmaWxlXQpjYXRlZ29yeTogRG9jdW1lbnQKdmVyc2lvbjogIjIuMjUiCnVuaWNvZGU6ICJmYjEwIgotLT4KPHN2ZwogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICB3aWR0aD0iMjQiCiAgaGVpZ2h0PSIyNCIKICB2aWV3Qm94PSIwIDAgMjQgMjQiCiAgZmlsbD0ibm9uZSIKICBzdHJva2U9IiNiNjViNTYiCiAgc3Ryb2tlLXdpZHRoPSIyIgogIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICBzdHJva2UtbGluZWpvaW49InJvdW5kIgo+CiAgPHBhdGggZD0iTTE0IDN2NGExIDEgMCAwIDAgMSAxaDQiIC8+CiAgPHBhdGggZD0iTTUgMTJ2LTdhMiAyIDAgMCAxIDIgLTJoN2w1IDV2NCIgLz4KICA8cGF0aCBkPSJNNSAxOGgxLjVhMS41IDEuNSAwIDAgMCAwIC0zaC0xLjV2NiIgLz4KICA8cGF0aCBkPSJNMTcgMThoMiIgLz4KICA8cGF0aCBkPSJNMjAgMTVoLTN2NiIgLz4KICA8cGF0aCBkPSJNMTEgMTV2NmgxYTIgMiAwIDAgMCAyIC0ydi0yYTIgMiAwIDAgMCAtMiAtMmgtMSIgLz4KPC9zdmc+Cg=="); --personal-pdf-color: #b65b56; }
+body.theme-dark { --personal-check-image: url("data:image/svg+xml;base64,PCEtLQp0YWdzOiBbY2hlY2ssIGNoZWNrbWFyaywgdGljaywgZG9uZSwgeWVzLCBvaywgY29uZmlybSwgc3VjY2VzcywgYXBwcm92ZSwgY29ycmVjdCwgY29tcGxldGVdCmNhdGVnb3J5OiBTeXN0ZW0KdmVyc2lvbjogIjEuMCIKdW5pY29kZTogImVhNWUiCi0tPgo8c3ZnCiAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogIHdpZHRoPSIyNCIKICBoZWlnaHQ9IjI0IgogIHZpZXdCb3g9IjAgMCAyNCAyNCIKICBmaWxsPSJub25lIgogIHN0cm9rZT0iIzIwMWYxYyIKICBzdHJva2Utd2lkdGg9IjIiCiAgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIgogIHN0cm9rZS1saW5lam9pbj0icm91bmQiCj4KICA8cGF0aCBkPSJNNSAxMmw1IDVsMTAgLTEwIiAvPgo8L3N2Zz4K"); --personal-pdf-color: #dfa09a; }

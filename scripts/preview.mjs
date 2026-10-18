@@ -7,6 +7,15 @@ routes['/selection'] = ['preview/selection.html', 'text/html; charset=utf-8'];
 routes['/selection-frame'] = ['preview/selection-frame.html', 'text/html; charset=utf-8'];
 routes['/surfaces'] = ['preview/surfaces.html', 'text/html; charset=utf-8'];
 routes['/states'] = ['preview/states.html', 'text/html; charset=utf-8'];
+routes['/implementation'] = ['preview/implementation.html', 'text/html; charset=utf-8'];
+routes['/objects'] = ['preview/objects.html', 'text/html; charset=utf-8'];
+routes['/objects.css'] = ['preview/objects.css', 'text/css'];
+routes['/objects.js'] = ['preview/objects.js', 'text/javascript; charset=utf-8'];
+routes['/review-file-type-pdf.svg'] = ['preview/assets/file-type-pdf.svg', 'image/svg+xml'];
+routes['/review-check-light.svg'] = ['preview/assets/check-light.svg', 'image/svg+xml'];
+routes['/review-check-dark.svg'] = ['preview/assets/check-dark.svg', 'image/svg+xml'];
+routes['/engineering-light.svg'] = ['demo-vault/assets/engineering-light.svg', 'image/svg+xml'];
+routes['/engineering-dark.svg'] = ['demo-vault/assets/engineering-dark.svg', 'image/svg+xml'];
 createServer(async (req, res) => {
   const url = new URL(req.url, `http://127.0.0.1:${port}`);
   if (url.pathname === '/media-preview.css') {

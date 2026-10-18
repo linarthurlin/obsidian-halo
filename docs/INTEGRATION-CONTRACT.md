@@ -2,6 +2,8 @@
 
 The theme owns visual styling. Plugins own behavior. All components can be installed independently; no runtime imports or build steps fetch another repository.
 
+Theme 0.5.0 adds optional `.pg-plugin-card` / `.pg-plugin-lane` visual classes and standard native document variables. Plugins may opt in, but are never required to change their DOM. Existing public aliases remain unchanged. New table density controls are theme-only classes `pg-compact-tables` and `pg-striped-tables`; they do not change note contents.
+
 Theme repo: https://github.com/linarthurlin/obsidian-personal-glass
 Companion repo: https://github.com/linarthurlin/obsidian-personal-glass-companion
 Agent repo: https://github.com/linarthurlin/obsidian-knowledge-agent

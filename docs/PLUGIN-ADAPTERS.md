@@ -4,6 +4,8 @@ Theme-owned source: `src/styles/adapters/{native,notebook-navigator,companion,kn
 
 Current targets: Personal Glass Companion Navigator, native Explorer selection, optional Notebook Navigator tokens/selection, Crisp Craft shared Reading View tokens, Canvas nodes, Live Preview tables and the new Agent .pga-workbench token interface. Third-party runtime compatibility and the new independent Agent view need fresh app testing.
 
+Theme 0.5.0 adds native Bases variables and `adapters/content-plugins.css`. Dataview tables inherit document rules; Tasks inherits native task tokens without claiming custom status support. Kanban 2.0.51 board/lane/item selectors were source-reviewed at `5134c05ad9a7861f551cd15d57cf50db8394901a`, not runtime certified. Optional `.pg-plugin-card` / `.pg-plugin-lane` classes are additive visual opt-ins. See [component coverage](COMPONENTS.zh-TW.md).
+
 A new adapter must document target version, DOM/token contract and fallback, then verify light/dark, keyboard focus, high contrast, narrow views and disabled/uninstalled plugin. Generic rules must not leak into unrelated plugins. Canvas, Shadow DOM and iframe internals may not be themeable; do not promise universal compatibility.
 
 ## Compatibility evidence matrix · 0.4.0

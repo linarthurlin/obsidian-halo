@@ -26,6 +26,8 @@ The theme can style supported plugins through documented tokens and scoped adapt
 
 [Navigation states and accessibility branch previews](docs/STATES.zh-TW.md): visit `/states` to inspect synthetic Explorer/Navigator selection, keyboard focus and the shipped print/reduced-transparency rules. Optional Style Settings also exposes paired selection colors and corner radius.
 
+[Production document components](docs/COMPONENTS.zh-TW.md): tags, properties, rounded checkboxes, tables, lists, links, embeds, PDF icons, native workspace objects and additive adapters. `/implementation` loads only the built theme for synthetic light/dark inspection. Table density and alternating rows are optional Style Settings controls. [Third-party icon notices](THIRD-PARTY-NOTICES.md).
+
 ## Develop
 
 Node.js 22.12+ and npm. Run independently in this repo:

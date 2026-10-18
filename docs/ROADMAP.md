@@ -1,5 +1,9 @@
 # Personal Glass Theme roadmap
 
+- [x] P1：依核准的 22 類物件提案建立正式元件 CSS／原生變數與 adapter 基礎；四項 review 修訂已落地。
+- [x] P1：只載入正式 Theme 的 22 類合成 fixture、明暗檢視、密度／鍵盤與 Callout 對比量測。
+- [ ] P1：22 類物件在真實 Obsidian 的全部子類型／互動狀態驗收，特別是 Properties、Live Preview 表格、Bases 與第三方 adapter。
+
 - [x] 獨立 repository、manifest、build、installer、CI 與 release pipeline。
 - [x] 從公開來源保留 Git 歷史與跨 repo 交接／樣式接口文件。
 - [x] 原有 Theme、平面選取、視覺 adapters、SVG Skill 與預覽。
